@@ -66,3 +66,129 @@
 // arr.splice(2,1)
 // console.log(arr)
 
+// ______________REMOVE DUPLICATE______________
+
+    // USING SET
+// const arr=[10,10,55,55,8,3,22,22]
+// console.log(arr)
+// // const ar=new Set(arr)
+// // console.log([...ar])
+
+// const newarr=[]
+// arr.forEach((k)=>{
+//    if(!newarr.includes(k))
+//    {
+//        newarr.push(k)
+//    }
+// })
+// console.log(newarr)
+
+// ______________WHICH ELEMT HAS APPERED HOW MANY TIMES____________________
+
+// let arr=[11,44,22,44,11,11,11,99,22,77,99,55]
+// console.log(arr)
+
+// const obj={}
+// arr.map((ar)=>{
+//     obj[ar]=(obj[ar] || 0)+1;
+// })
+// console.log(obj)
+
+
+// ______________COUNT vovels constont space________________
+// str="adfjjfj JFDSAH fldjosjhaLJJLLOSHD CJ MMCV,BIUYRWUOTIP IYQPROWUDMXBVCBNXMZ,QWERTYUIOPASDFGHJKLZXCVBNM,ASDFGHJKLQWERTY   hsdfjh  y yoi A kdh   yeaifyaU HAWUJWMM,VF    AOUHSKZ  ";
+// // let vowelo=0, space=0,consonat=0;
+// let vowels="aeiouAEIOU"
+// for( let char of str){
+//     if(vowels.includes(char))
+//         vowelo++;
+//     else if(char===" ")
+//         space++;
+//     else if(char.match(/[a-zA-Z]/))
+//         consonat++;
+
+// }
+// obj={vovelscount:vowelo,spacecount:space,consonantcount:consonat}
+// console.log(obj)
+
+// ____mehtos 2:
+
+// for(char in str)
+// {
+//     vovels=str.match(/[AEIOUaeiou]/g)
+//     space=str.match(/[\s]/g)
+//     consonat=str.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWZYZ]/g)
+// }
+// let obj={vovela:vovels.length,space:space.length,consot:consonat.length}
+// console.log(obj)
+
+//____________USING REDUCE_____________
+
+// let amigo=str.split('').reduce((acc,itr)=>{
+//    if(itr.match(/[AEIOUaeiou]/g))
+//     acc.vovels++;
+//    else if(itr===" ")
+//     acc.space++;
+//    if(itr.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWZYZ]/g))
+//     acc.consonat++;
+//   return acc;
+
+// },{vovels:0,consonat:0,space:0})
+// console.log(amigo)
+
+// -------------------REVERSE STRING--------------
+
+    // const amol="kkkaaammmm"
+    // let vale= amol.split('')
+    // var empty;
+    // for(var i=vale.length; i>=0; i--)
+    // {
+    //     empty+=vale[i];
+    // }
+    // console.log(empty)
+    
+    // __________PROGRAM TO REMOVE WHITE SPACES____________
+// function space(str)
+// {
+//     return str.replace(/\s+/g,' ')
+   
+// }
+// let kk="        s dffj     fjdsl       "
+// let amg=space(kk)
+// console.log(amg)
+
+//SECOND METHOD
+// function space(str)
+// {
+//     return str.split(' ').filter((arg)=>arg!=="").join(" ")
+    
+// }
+// let kk="        s dffj     fjdsl       "
+// let amg=space(kk)
+// console.log(amg)
+
+// let kunal="aaiioouuhhkkkkk"
+// METHOD 1
+// console.log(kunal.replace(/[AEIOUaeiou]/g,""))
+
+//METHOD 2
+// let k=kunal.split('').filter(amg=>!'AEIOUaeiou'.includes(amg)).join("")
+// console.log(k)
+
+//METHOD 3
+// let amigo=""
+// for(let char of kunal)
+// {
+//      if(!"AEIOUaeiou".includes(char))
+//         amigo+=char
+// }
+// console.log(amigo)
+
+// ----CHARCODE AT INDEX---------
+// let kunal="aabsfdkhs"
+// console.log(kunal.charCodeAt(2))
+// const kkk=kunal.split('').map((amg)=>{
+//     return amg.charCodeAt(0)})
+// // or
+// // split('').map(char => char.charCodeAt(0))
+// console.log(kkk)
