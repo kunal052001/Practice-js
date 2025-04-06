@@ -1,0 +1,40 @@
+.parent{
+    width: 70%;
+    height:50%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    justify-content: space-between ;
+    align-items: center;
+   
+  
+
+}
+.div1{
+    width: 30%;
+    height:30%;
+    background-color:aliceblue;
+  
+  
+
+}
+.div2{
+    width: 20%;
+    height: 20%;
+    background-color: aqua;
+
+  
+}
+.div3{
+    width: 10%;
+    height:10%;
+    background-color: brown;
+   
+   
+  
+     
+  
+}

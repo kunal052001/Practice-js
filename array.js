@@ -69,10 +69,12 @@
 // ______________REMOVE DUPLICATE______________
 
     // USING SET
-// const arr=[10,10,55,55,8,3,22,22]
-// console.log(arr)
-// // const ar=new Set(arr)
-// // console.log([...ar])
+    // const arr = [10, 10, 55, 55, 8, 3, 22, 22];
+    // console.log(arr); // Output: [10, 10, 55, 55, 8, 3, 22, 22]
+    
+    // const ar = new Set(arr); // Creates a Set, which automatically removes duplicate values
+    // console.log([...ar]); // Converts the Set back to an array and logs the unique values
+    
 
 // const newarr=[]
 // arr.forEach((k)=>{
@@ -96,8 +98,8 @@
 
 
 // ______________COUNT vovels constont space________________
-// str="adfjjfj JFDSAH fldjosjhaLJJLLOSHD CJ MMCV,BIUYRWUOTIP IYQPROWUDMXBVCBNXMZ,QWERTYUIOPASDFGHJKLZXCVBNM,ASDFGHJKLQWERTY   hsdfjh  y yoi A kdh   yeaifyaU HAWUJWMM,VF    AOUHSKZ  ";
-// // let vowelo=0, space=0,consonat=0;
+str="adfjjfj JFDSAH fldjosjhaLJJLLOSHD CJ MMCV,BIUYRWUOTIP IYQPROWUDMXBVCBNXMZ,QWERTYUIOPASDFGHJKLZXCVBNM,ASDFGHJKLQWERTY   hsdfjh  y yoi A kdh   yeaifyaU HAWUJWMM,VF    AOUHSKZ  ";
+// let vowelo=0, space=0,consonat=0;
 // let vowels="aeiouAEIOU"
 // for( let char of str){
 //     if(vowels.includes(char))
@@ -113,14 +115,19 @@
 
 // ____mehtos 2:
 
-// for(char in str)
-// {
-//     vovels=str.match(/[AEIOUaeiou]/g)
-//     space=str.match(/[\s]/g)
-//     consonat=str.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWZYZ]/g)
-// }
-// let obj={vovela:vovels.length,space:space.length,consot:consonat.length}
-// console.log(obj)
+
+// const vowels = str.match(/[AEIOUaeiou]/g) || [];
+// const spaces = str.match(/\s/g) || [];
+// const consonants = str.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/g) || [];
+
+// let obj = {
+//     vowels: vowels.length,
+//     spaces: spaces.length,
+//     consonants: consonants.length
+// };
+
+// console.log(obj);
+
 
 //____________USING REDUCE_____________
 
